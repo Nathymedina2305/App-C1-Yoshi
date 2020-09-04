@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meu Cofrinho"
+        android:textColor="#9C27B0"
+        android:textSize="50sp"
+        android:id="@+id/tv_tt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Nome do cofrinho"
+        android:textColor="#9C27B0"
+        android:textSize="35sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tt"
+        app:layout_goneMarginLeft="500dp"
+        android:textAlignment="center"
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_nmc"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nm"
+        android:hint="O nome do seu cofrinho"
+        android:textSize="25sp"
+        android:inputType="text"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor A"
+        android:textColor="#9C27B0"
+        android:textSize="35sp"
+        android:id="@+id/tv_va"
+        app:layout_constraintTop_toBottomOf="@+id/et_nmc"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_va"
+        android:id="@+id/et_va"
+        android:hint="Digite seu Valor A"
+        android:textSize="25sp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor B"
+        android:textColor="#9C27B0"
+        android:textSize="35sp"
+        android:id="@+id/tv_vb"
+        app:layout_constraintTop_toBottomOf="@+id/tv_va"
+        android:layout_marginTop="85dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vb"
+        android:id="@+id/et_vb"
+        android:hint="Digite seu Valor B"
+        android:textSize="25sp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/bt_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="#9C27B0"
+
+        android:onClick="cliqueAqui"
+        android:text="Calcular Money"
+        android:textColor="#F4F1F4"
+        android:textSize="15sp"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/tv_vb"
+
+
+        tools:layout_editor_absoluteX="851dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Valor total"
+
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/tv_resultado"
+        android:textColor="#787880"
+        app:layout_constraintTop_toBottomOf="@id/bt_01"
+        app:layout_goneMarginTop="30dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
